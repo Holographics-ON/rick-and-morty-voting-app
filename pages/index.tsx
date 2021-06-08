@@ -40,7 +40,7 @@ export default function Home( { characters }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch('https://rickandmortyapi.com/api/character/[1,2,3,4,5,244]',{method: 'GET'})
+  const res = await fetch('https://rickandmortyapi.com/api/character/1,2,3,4,5,244',{method: 'GET'})
   const data = await res.json()
   console.log(data)
 
