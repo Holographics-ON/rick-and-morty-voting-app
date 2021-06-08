@@ -43,6 +43,12 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const res = await fetch(`https://rickandmortyapi.com/api/character/[1,2,3,4,5,244]`)
   const data = await res.json()
 
+   if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
   return {
     props:{
       characters: data
