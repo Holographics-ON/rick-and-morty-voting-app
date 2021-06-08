@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetServerSideProps, GetStaticPaths } from 'next'
 import styles from '../styles/Home.module.css'
 import Counter from '../Components/Counter'
 
@@ -39,7 +39,7 @@ export default function Home( { characters }) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const res = await fetch(`https://rickandmortyapi.com/api/character/[1,2,3,4,5,244]`)
   const data = await res.json()
 
