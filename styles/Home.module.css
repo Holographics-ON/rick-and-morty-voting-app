@@ -9,13 +9,12 @@
 }
 
 .main {
-    padding: 5rem 0;
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .footer {
@@ -71,14 +70,18 @@
 }
 
 .grid {
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 50%;
     max-height: 100vh;
 }
+.pageButtons {
+    margin-left: 25%;
+}
+
 .button {
     padding: 0.4rem;
     margin-top: 0.5rem;
@@ -93,21 +96,27 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 800px;
     max-width: 50%;
+    max-height: 100vh;
+}
+
+.box h5 {
+    max-width: 40%;
+}
+.box img {
+    max-width: 53%;
 }
 
 .card {
     margin: 1rem 0.5rem;
-    padding: 0.75rem;
+    padding: 0.6rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    width: 55%;
+    max-width: 44%;
 }
 
 .card:hover,
@@ -128,6 +137,12 @@
     line-height: 1.5;
 }
 
+.search input {
+    width: 39vw;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
 .logo {
     height: 1em;
     margin-left: 0.5rem;
@@ -137,5 +152,15 @@
     .grid {
         width: 100%;
         flex-direction: column;
+    }
+
+    .search input {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .search input,
+    .search button {
+        width: 100%;
     }
 }
