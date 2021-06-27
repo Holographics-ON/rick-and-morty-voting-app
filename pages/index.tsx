@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { GetServerSideProps, GetStaticPaths } from 'next'
 import styles from '../styles/Home.module.css'
@@ -127,7 +128,9 @@ export default function Home( { data }) {
             const {id, name, image } = character;
             return (
             <div className={styles.box} key= {id}>
-              <img className={styles.card} src={ image } alt= { `${name} Thumbnail` }/>        
+              <Link href="/character/[id]" as={`/character/${id}`}>
+                <img className={styles.card} src={ image } alt= { `${name} Thumbnail` }/>        
+              </Link>
               <h5>{ name } 
               <Counter /> </h5>
               
