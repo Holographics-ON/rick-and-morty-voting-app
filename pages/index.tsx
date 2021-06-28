@@ -103,7 +103,7 @@ export default function Home( { data }) {
       <main className={styles.main}>
         <div className={styles.grid}>
           <h1 className={styles.title}>
-            Welcome to Rick & Morty api
+            Welcome to Rick & Morty Character Poll
           </h1>
 
           <p className={styles.description}>
