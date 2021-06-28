@@ -1,6 +1,6 @@
 # Experimental hands-on project: Rick and Morty Character Poll
 
-Created by Holographics-ON with the intent of learning purposes and teachin myself the fundamentals of using Next.js / Server-side rendering props using "fetch api".
+Created by Holographics-ON with the intent of learning purposes and teachin myself the fundamentals of using Next.js/ TypeScript / React / Server-side rendering props using "fetch api".
 
 Hope you enjoy the good memories of the characters from the show !!
 
