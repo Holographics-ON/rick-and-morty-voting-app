@@ -160,12 +160,11 @@
     .grid {
         width: 100vw;
         max-width: 97vw;
-        margin-bottom: 9vh;
+        margin-bottom: 2rem;
     }
 
     .box {
         display: flex;
-        justify-content: flex-start;
         flex-wrap: wrap;
         margin-left: 0.5rem;
         width: 100vw;
